@@ -7,17 +7,17 @@ export class AuthController {
 
   @Post('signup')
   signup() {
-    return 'signup route';
+    return this.authService.signup();
   }
 
   @Post('signin')
   signin() {
-    return 'signin route';
+    return this.authService.signin();
   }
 
   @Get('signout')
   signout() {
-    return 'signout route';
+    return this.authService.signout();
   }
 
 }
